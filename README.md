@@ -12,7 +12,7 @@ our website.
 Technologies for this project: Vue.js will be used as a frontend, PHP framework Laravel will be used on the backend, and MySQL database will be used.
 
 
-## start local
+## start 
 php artisan serve
 
 ## -- 
