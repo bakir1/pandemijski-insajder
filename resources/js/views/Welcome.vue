@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid">
-    <h1 class="mt-4">Dashboard</h1>
+    <h1 class="mt-4">Početna</h1>
     <ol class="breadcrumb mb-4">
       <li class="breadcrumb-item active">
-        <router-link to="/">Dashboard</router-link>          
+        <router-link to="/">Početna</router-link>          
       </li>
-      <li class="breadcrumb-item active">Overview</li>
+      <li class="breadcrumb-item active">Prikaz</li>
     </ol>
     <div class="row">
       <div class="col-xl-3 col-md-6">
