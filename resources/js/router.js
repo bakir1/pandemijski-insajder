@@ -19,12 +19,33 @@ const routes = [
         path: '/testiranje',
         name: 'testiranje',
         component: () => import('./views/Testiranje.vue')
+    },
+    {
+        path: '/zastita',
+        name: 'zastita',
+        component: () => import('./views/Zastita.vue')
+    },
+    {
+        path: '/simptomi',
+        name: 'simptomi',
+        component: () => import('./views/Simptomi.vue')
+    },
+    {
+        path: '/vakcine',
+        name: 'vakcine',
+        component: () => import('./views/Vakcine.vue')
+    },
+    {
+        path: '/statistika',
+        name: 'statistika',
+        component: () => import('./views/Statistika.vue')
     }
 
 ];
 
 const router = new Router({
-    routes: routes
+    routes: routes, 
+    linkActiveClass: 'active'
 });
 
 export default router;

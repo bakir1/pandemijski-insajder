@@ -12,7 +12,7 @@
       <div class="col-xl-6">
         <div class="card mb-4">
           <div class="card-header">
-            <i class="fas fa-chart-area mr-1"></i>
+            <i class="fas fa-gavel"></i>
             Mjere info
           </div>
           <div class="card-body">

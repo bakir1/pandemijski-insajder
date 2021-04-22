@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container-fluid">
-      <h1 class="mt-4">Početna</h1>
+      <h1 class="mt-4">Testiranje</h1>
       <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">
           <router-link to="/">Početna</router-link>
