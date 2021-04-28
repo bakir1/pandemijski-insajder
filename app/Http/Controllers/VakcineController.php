@@ -14,7 +14,8 @@ class VakcineController extends Controller
      */
     public function index()
     {
-        //
+        $vakcine = Vakcine::paginate();
+        return response()->json($vakcine, 200);
     }
 
     /**
@@ -35,7 +36,25 @@ class VakcineController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+
+        $request->validate([
+            'ime'=> 'required|min:3',
+            'kolicina' => 'required',
+            'efikasnost' => 'required',
+            'porijeklo' => 'required',
+        ]);
+
+        $vakcine = new Vakcine();
+        $vakcine->ime = $request->ime;
+        $vakcine->kolicina = $request->kolicina;
+        $vakcine->efikasnost = $request->efikasnost;
+        $vakcine->porijeklo = $request->porijeklo;
+
+        if($vakcine->save()){
+            return response()->json($vakcine, 200);
+        }else {
+            return response()->json($vakcine, 500);
+        }
     }
 
     /**

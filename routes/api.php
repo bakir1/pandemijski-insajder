@@ -11,4 +11,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 //Route::resource('vakcine', 'VakcineController');
 
-Route::resource('vakcine', VakcineController::class);
+Route::resource('vakcines', VakcineController::class);

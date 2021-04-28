@@ -22,6 +22,7 @@ class CreateVakcinesTable extends Migration
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
