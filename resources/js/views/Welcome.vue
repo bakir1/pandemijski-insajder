@@ -67,14 +67,20 @@
       <DataBoxes :stats="stats" />
       <CountrySelect @get-country="getCountryData" :countries="countries" />
 
-      <b-button @click="clearCountryData" v-if="stats.Country" variant="outline-primary"
+      <b-button
+        @click="clearCountryData"
+        v-if="stats.Country"
+        variant="outline-primary"
         >Novi Podaci</b-button
       >
     </main>
 
-    <main class="flex flex-col align-center justify-center text-center" v-else>
-      <div class="text-gray-500 text-3xl mt-10 mb-6">Fetching Data</div>
-    </main>
+<!-- mapa, statistika, itd... -->
+<div>
+  <h1>Mapa Covid-19</h1>
+<iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="800" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+</div>   
+
   </div>
 </template>
 
@@ -93,7 +99,7 @@ export default {
   data() {
     return {
       loading: true,
-      title: "Global",
+      title: "Svijet",
       dataDate: "",
       status: {},
       countries: [],
@@ -110,12 +116,12 @@ export default {
       this.stats = country;
       this.title = country.Country;
     },
-    async clearCountryData(){
-      this.loading = true
-      const data = await this.fetchCovidData()
-      this.title = 'Global'
-      this.stats = data.Global
-      this.loading = false 
+    async clearCountryData() {
+      this.loading = true;
+      const data = await this.fetchCovidData();
+      this.title = "Global";
+      this.stats = data.Global;
+      this.loading = false;
     },
   },
   async created() {

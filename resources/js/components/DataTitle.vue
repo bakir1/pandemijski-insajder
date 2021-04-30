@@ -1,8 +1,8 @@
 <template>
     <div class="text-center">
-        <h2 class="text-3xl font-bold">{{ text }}</h2>
+        <h2 class="text-3xl font-bold">{{text}}</h2>
         <div class="text-2xl mt-4 mb-10">
-            {{timestamp}}
+            {{timestamp}} 
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@ export default {
     props: ['text', 'dataDate'],
     computed: {
         timestamp: function() {
-            return moment(this.dataDate).format('MMMM Do YYYY, h:mm:ss a')
+            return moment(this.dataDate).format('MMMM Do YYYY, h:mm:ss a') +  ' *ažurirano'
         }
     }
 }

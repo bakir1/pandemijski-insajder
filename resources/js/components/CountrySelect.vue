@@ -3,7 +3,7 @@
     v-model="selected"
     class="form-select mt1 block w-full border p-3 rounded"
   >
-    <option value="0">Izaberi Državu</option>
+    <option value="0">Odaberi Državu</option>
     <option v-for="country in countries" :value="country.ID">
         {{ country.Country }}
     </option>
