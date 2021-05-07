@@ -13,7 +13,12 @@
 
           <router-link to="/mjere" class="nav-link" exact>
             <i class="fas fa-gavel"></i>
-           <span style="margin-left: 10px">Mjere</span>
+            <span style="margin-left: 10px">Mjere</span>
+          </router-link>
+
+          <router-link to="/statistika" class="nav-link" exact>
+            <i class="far fa-chart-bar"></i>
+            <span style="margin-left: 10px">Statistika</span>
           </router-link>
 
           <router-link to="/testiranje" class="nav-link" exact>
@@ -23,7 +28,7 @@
 
           <router-link to="/zastita" class="nav-link" exact>
             <i class="fas fa-user-shield"></i>
-           <span style="margin-left: 10px">Zaštita</span>
+            <span style="margin-left: 10px">Zaštita</span>
           </router-link>
 
           <router-link to="/simptomi" class="nav-link" exact>
@@ -34,11 +39,6 @@
           <router-link to="/vakcine" class="nav-link" exact>
             <i class="fas fa-check-double"></i>
             <span style="margin-left: 10px">Vakcine</span>
-          </router-link>
-
-          <router-link to="/statistika" class="nav-link" exact>
-            <i class="far fa-chart-bar"></i>
-            <span style="margin-left: 10px">Statistika</span>
           </router-link>
         </div>
       </div>

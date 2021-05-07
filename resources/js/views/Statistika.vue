@@ -68,38 +68,38 @@
  <div id="welcome" class="container">
       <div class="row mt-5" v-if="arrPositive.length > 0">
         <div class="col">
-          <h2>Positive</h2>
-          <line-chart :chartData="arrPositive" :options="chartOptions" label="Positive" :chartColors="positiveChartColors"></line-chart>
+          <h2>Pozitivni</h2>
+          <line-chart :chartData="arrPositive" :options="chartOptions" label="Pozitivni" :chartColors="positiveChartColors"></line-chart>
         </div>
       </div>
       <div class="row mt-5" v-if="arrHopitalized.length > 0">
         <div class="col">
-          <h2>Hopitalized</h2>
-          <line-chart :chartData="arrHopitalized" :options="chartOptions" label="Hopitalized" :chartColors="hospitalizedChartColors"></line-chart>
+          <h2>Hospitalizirani</h2>
+          <line-chart :chartData="arrHopitalized" :options="chartOptions" label="Hospitalizirani" :chartColors="hospitalizedChartColors"></line-chart>
         </div>
       </div>
       <div class="row mt-5" v-if="arrInIcu.length > 0">
         <div class="col">
-          <h2>In ICU</h2>
-          <line-chart :chartData="arrInIcu" :options="chartOptions" label="In ICU" :chartColors="inIcuColors"></line-chart>
+          <h2>Intenzivna Njega</h2>
+          <line-chart :chartData="arrInIcu" :options="chartOptions" label="Intenzivna Njega" :chartColors="inIcuColors"></line-chart>
         </div>
       </div>
       <div class="row mt-5" v-if="arrOnVentilators.length > 0">
         <div class="col">
-          <h2>On Ventilators</h2>
-          <line-chart :chartData="arrOnVentilators" :options="chartOptions" label="On Ventilators" :chartColors="onVentilatorsColors"></line-chart>
+          <h2>Na Respiratoru</h2>
+          <line-chart :chartData="arrOnVentilators" :options="chartOptions" label="Na Respiratoru" :chartColors="onVentilatorsColors"></line-chart>
         </div>
       </div>
       <div class="row mt-5" v-if="arrRecovered.length > 0">
         <div class="col">
-          <h2>Recovered</h2>
-          <line-chart :chartData="arrRecovered" :options="chartOptions" label="Recovered" :chartColors="recoveredColors"></line-chart>
+          <h2>Oporavljeni</h2>
+          <line-chart :chartData="arrRecovered" :options="chartOptions" label="Oporavljeni" :chartColors="recoveredColors"></line-chart>
         </div>
       </div>
       <div class="row mt-5" v-if="arrDeaths.length > 0">
         <div class="col">
-          <h2>Deaths</h2>
-          <line-chart :chartData="arrDeaths" :options="chartOptions" label="Deaths" :chartColors="deathColors"></line-chart>
+          <h2>Umrli</h2>
+          <line-chart :chartData="arrDeaths" :options="chartOptions" label="Umrli" :chartColors="deathColors"></line-chart>
         </div>
       </div>
     </div>
@@ -171,6 +171,7 @@ export default {
     };
   },
   async created(){
+
     const { data } = await axios.get("https://api.covidtracking.com/v1/us/daily.json");
 
     data.forEach(d => {
