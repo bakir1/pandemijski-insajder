@@ -39,6 +39,7 @@
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
@@ -64,6 +65,7 @@ Zašto? Pranje ruku sapunom i vodom ili sredstvima za čišćenje ruku na bazi a
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
@@ -89,28 +91,29 @@ Zašto? Pranje ruku sapunom i vodom ili sredstvima za čišćenje ruku na bazi a
             </div>
           </div>
 
-          <div class="card">
+           <div class="card">
             <div class="card-header" id="heading4">
               <h5 class="mb-0">
                 <button
-                  class="btn btn-link"
+                  class="btn btn-link collapsed"
                   data-toggle="collapse"
-                  data-target="#collapseOne"
+                  data-target="#collapse4"
                   aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-Prilikom kašljanja ili kihanja trebate prekriti usta i nos unutarnjom stranom lakta ili jednokratnom maramicom – nakon korištenja odmah baciti maramicu u kantu za otpatke i oprati ruke.                </button>
+                  aria-controls="collapse4"
+                >Prilikom kašljanja ili kihanja trebate prekriti usta i nos unutarnjom stranom lakta ili <br>
+                  jednokratnom maramicom – nakon korištenja odmah baciti maramicu u kantu za otpatke i oprati ruke. 
+                </button>
               </h5>
             </div>
-
             <div
-              id="collapseOne"
+              id="collapse4"
               class="collapse"
               aria-labelledby="heading4"
               data-parent="#accordion"
             >
               <div class="card-body">
-Zašto? Respiratorne kapljice šire virus. Pridržavajući se navedenog štitite ljude oko sebe od virusa koji izazivaju prehladu, gripu i COVID-19.              </div>
+                Zašto? Respiratorne kapljice šire virus. Pridržavajući se navedenog štitite ljude oko sebe od virusa koji izazivaju prehladu, gripu i COVID-19.
+              </div>
             </div>
           </div>
 
@@ -118,45 +121,45 @@ Zašto? Respiratorne kapljice šire virus. Pridržavajući se navedenog štitite
             <div class="card-header" id="heading5">
               <h5 class="mb-0">
                 <button
-                  class="btn btn-link"
+                  class="btn btn-link collapsed"
                   data-toggle="collapse"
-                  data-target="#collapseOne"
+                  data-target="#collapse5"
                   aria-expanded="false"
-                  aria-controls="collapseOne"
+                  aria-controls="collapse5"
                 >
-Izbjegavajte veće grupe ljudi, okupljanja i boravak u zatvorenim javnim prostorima.                 </button>
+                 Izbjegavajte veće grupe ljudi, okupljanja i boravak u zatvorenim javnim prostorima. 
+                </button>
               </h5>
             </div>
-
             <div
-              id="collapseOne"
-              class="collapse "
+              id="collapse5"
+              class="collapse"
               aria-labelledby="heading5"
               data-parent="#accordion"
             >
               <div class="card-body">
-Zašto? Time smanjujete rizik od bolesti koje se prenose kapljičnim putem kao što su prehlada, gripa i COVID-19.              </div>
+Zašto? Time smanjujete rizik od bolesti koje se prenose kapljičnim putem kao što su prehlada, gripa i COVID-19. 
+              </div>
             </div>
           </div>
 
-          <div class="card">
+           <div class="card">
             <div class="card-header" id="heading6">
               <h5 class="mb-0">
                 <button
-                  class="btn btn-link"
+                  class="btn btn-link collapsed"
                   data-toggle="collapse"
-                  data-target="#collapseOne"
+                  data-target="#collapse6"
                   aria-expanded="false"
-                  aria-controls="collapseOne"
+                  aria-controls="collapse6"
                 >
-Izbjegavajte rukovanje, grljenje i poljupce 
+                 Izbjegavajte rukovanje, grljenje i poljupce 
                 </button>
               </h5>
             </div>
-
             <div
-              id="collapseOne"
-              class="collapse "
+              id="collapse6"
+              class="collapse"
               aria-labelledby="heading6"
               data-parent="#accordion"
             >
@@ -164,6 +167,8 @@ Izbjegavajte rukovanje, grljenje i poljupce
 Zašto? Rukovanje se smatra bliskim kontaktom za širenje bolesti koje se prenose kapljičnim putem, te se zbog toga preporučuje da se ljudi što manje rukuju, jer se time smanjuje rizik potencijalnog prijenosa bolesti kao što su gripa i novi koronavirus (COVID-19).              </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
