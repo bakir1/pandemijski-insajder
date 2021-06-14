@@ -16,6 +16,11 @@ const routes = [
         component: () => import('./views/Mjere.vue')
     },
     {
+        path: '/statistika',
+        name: 'statistika',
+        component: () => import('./views/Statistika.vue')
+    },
+    {
         path: '/testiranje',
         name: 'testiranje',
         component: () => import('./views/Testiranje.vue')
@@ -34,13 +39,7 @@ const routes = [
         path: '/vakcine',
         name: 'vakcine',
         component: () => import('./views/Vakcine.vue')
-    },
-    {
-        path: '/statistika',
-        name: 'statistika',
-        component: () => import('./views/Statistika.vue')
     }
-
 ];
 
 const router = new Router({
