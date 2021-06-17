@@ -7,60 +7,7 @@
       </li>
       <li class="breadcrumb-item active">Prikaz</li>
     </ol>
-    <!-- <div class="row">
-      <div class="col-xl-3 col-md-6">
-        <div class="card bg-primary text-white mb-4">
-          <div class="card-body">Primary Card</div>
-          <div
-            class="card-footer d-flex align-items-center justify-content-between"
-          >
-            <a class="small text-white stretched-link" href="#">View Details</a>
-            <div class="small text-white">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card bg-warning text-white mb-4">
-          <div class="card-body">Warning Card</div>
-          <div
-            class="card-footer d-flex align-items-center justify-content-between"
-          >
-            <a class="small text-white stretched-link" href="#">View Details</a>
-            <div class="small text-white">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card bg-success text-white mb-4">
-          <div class="card-body">Success Card</div>
-          <div
-            class="card-footer d-flex align-items-center justify-content-between"
-          >
-            <a class="small text-white stretched-link" href="#">View Details</a>
-            <div class="small text-white">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card bg-danger text-white mb-4">
-          <div class="card-body">Danger Card</div>
-          <div
-            class="card-footer d-flex align-items-center justify-content-between"
-          >
-            <a class="small text-white stretched-link" href="#">View Details</a>
-            <div class="small text-white">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
 
     <main v-if="!loading">
       <DataTitle :text="title" :dataDate="dataDate" />
@@ -77,9 +24,22 @@
 
 <!-- mapa, statistika, itd... -->
 <div>
+    <hr>
   <h1>Mapa Covid-19</h1>
+  <h5>Ukupno zabilježenih slučajeva</h5>
 <iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="800" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 </div>   
+
+
+<h4>Ukupni COVID-19 testovi na 1.000 ljudi</h4>
+<p>Na ovoj tabeli možete provjeriti koliki je ukupni broj COVID-19 testova na 1.000 ljudi u vašoj državi i možete uporediti tako što dodate više država.</p>
+<p>Da bi uporedili više država pritisnite dugme(Add country) i pritiskom na polje pored države odabrali ste državu.</p>
+<iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand?country=BIH+HRV+SRB+MNE+MKD" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+<hr>
+<h4>Potvrđeni slučajevi COVID-19</h4>
+<p>Broj potvrđenih slučajeva manji je od broja stvarnih slučajeva; glavni razlog tome je ograničeno testiranje.</p>
+<iframe src="https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case?country=BIH+HRV+SRB+MNE+MKD" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 
   </div>
 </template>
